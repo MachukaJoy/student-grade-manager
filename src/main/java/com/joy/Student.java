@@ -13,7 +13,7 @@ public class Student {
 
     public void addGrade(int grade) {
         if (grade < 0 || grade > 100) {
-            throw new IllegalArgumentException("Invalid grae");
+            throw new IllegalArgumentException("Invalid Grade");
         }
         grades.add(grade);
     }
