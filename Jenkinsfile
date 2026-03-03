@@ -22,11 +22,10 @@ pipeline {
             }
         }
 
-        stage('Build with Gradle') {
+        stage('Build with Maven') {
             steps {
                 dir("${PROJECT_DIR}") {
-                    sh 'chmod +x gradlew'
-                    sh './gradlew clean build'
+                    sh 'mvn clean install'
                 }
             }
         }
