@@ -34,7 +34,7 @@ pipeline {
             steps {
                 sh '''
                     mkdir -p ${BUILD_DIR}
-                    cp country-name/build/libs/*.jar ${BUILD_DIR}/
+                    cp country-name/target/*.jar ${BUILD_DIR}/
                 '''
             }
         }
